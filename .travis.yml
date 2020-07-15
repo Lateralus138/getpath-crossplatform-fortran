@@ -1,9 +1,4 @@
-language: minimal
-group: travis_latest
-
-git:
-  depth: 25
-  quiet: true
+language: fortran
 
 env: FC=gfortran
 
@@ -18,12 +13,6 @@ matrix:
     - brew upgrade gcc > /dev/null
     - brew install lapack open-mpi > /dev/null
 
-
-# install:
-# - cmake -B build
-# - cmake --build build
-
 script:
-- gfortran getpath.f95 -o getpath
 - cd build
-- ctest --output-on-failure
+- gfortran getpath.f95 -o getpath
