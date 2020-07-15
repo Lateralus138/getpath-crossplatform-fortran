@@ -1,0 +1,28 @@
+language: minimal
+group: travis_latest
+
+git:
+  depth: 25
+  quiet: true
+
+env: FC=gfortran
+
+addons:
+  apt:
+    packages: ['gfortran','liblapack-dev','libopenmpi-dev']
+
+matrix:
+  include:
+  - os: osx
+    before_install:
+    - brew upgrade gcc > /dev/null
+    - brew install lapack open-mpi > /dev/null
+
+
+install:
+- cmake -B build
+- cmake --build build
+
+script:
+- cd build
+- ctest --output-on-failure
