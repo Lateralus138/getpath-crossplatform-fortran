@@ -20,8 +20,9 @@ matrix:
 
 
 install:
-- cmake -B build
-- cmake --build build
+- gfortran getpath.f95 -o getpath
+# - cmake -B build
+# - cmake --build build
 
 script:
 - cd build
