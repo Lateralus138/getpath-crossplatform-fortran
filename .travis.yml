@@ -19,11 +19,11 @@ matrix:
     - brew install lapack open-mpi > /dev/null
 
 
-install:
-- gfortran getpath.f95 -o getpath
+# install:
 # - cmake -B build
 # - cmake --build build
 
 script:
+- gfortran getpath.f95 -o getpath
 - cd build
 - ctest --output-on-failure
