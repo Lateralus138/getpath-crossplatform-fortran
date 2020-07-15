@@ -12,8 +12,9 @@ Get the ***PATH*** variable contents in both ***Windows*** and ***Linux*** using
       1. [Shell](#shell)
 2. [Motivation](#motivation)
 3. [Files](#files)
-4. [ScreenShot](#screen)
-5. [License](#license)
+4. [Help with Mac](#machelp)
+5. [ScreenShot](#screen)
+6. [License](#license)
 
 ## Usage <a name="usage"></a>
 
@@ -81,6 +82,17 @@ This is a ***[FOSS](https://en.wikipedia.org/wiki/Free_and_open-source_software)
 - [Linux -Compiled Executable](./compile/linux/getpath)
 - [This Repository](https://github.com/Lateralus138/getpath-crossplatform-fortran)
 - [Project Release](https://lateralus138.github.io/getpath-crossplatform-fortran/)
+
+## Help with Mac <a name="machelp"></a>
+
+This is currently only compiled in Windows and Linux. If someone is interested in this in ***Mac***/***Apple*** it should run the same and just needs to be compiled.
+I'm pretty sure you can compile in Apple the same way you would with their version of ***gfortran***:
+
+```Bash
+ $ # Assuming Bash/Shell in Terminal
+ $ gfortran getpath.f95 -o getpath
+```
+Please feel free to fork or make a pull request; whatever you want.
 
 ## Screenshot <a name="screen"></a>
 
