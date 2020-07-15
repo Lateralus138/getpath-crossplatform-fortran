@@ -80,7 +80,7 @@ This is a ***[FOSS](https://en.wikipedia.org/wiki/Free_and_open-source_software)
 - [Windows - Compiled Executable](./compile/windows/getpath.exe)
 - [Linux -Compiled Executable](./compile/linux/getpath)
 - [This Repository](https://github.com/Lateralus138/getpath-crossplatform-fortran)
-- [Project Release]([http](https://lateralus138.github.io/getpath-crossplatform-fortran))
+- [Project Release](https://lateralus138.github.io/getpath-crossplatform-fortran/)
 
 ## Screenshot <a name="screen"></a>
 
